@@ -9,7 +9,7 @@ const more = () => {
     alert("Mais");
 }
 
-export const ProductCart = () => {
+const ProductCart = () => {
     return (
         <>
             <div className='productSee mb-1'>
@@ -36,3 +36,5 @@ export const ProductCart = () => {
         </>
     )
 }
+
+export default ProductCart
