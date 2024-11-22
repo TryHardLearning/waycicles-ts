@@ -2,10 +2,10 @@ import React, { useState } from 'react'
 import { Container } from 'react-bootstrap'
 import { ArrowLeftOutlined, ArrowRightOutlined } from '@mui/icons-material'
 import { sliders } from '../Data'
-import {ButtonDefault} from '../components/ButtonDefault'
+import { ButtonDefault } from '../components'
 import './css/Slider.css'
 
-export const Slider = () => {
+const Slider = () => {
 
   const [slideIndex, setSlideIndex] = useState(0);
   const handleClick = (direction: string) => {
@@ -41,3 +41,5 @@ export const Slider = () => {
     </Container>
   )
 }
+
+export default Slider
