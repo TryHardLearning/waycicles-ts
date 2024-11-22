@@ -1,4 +1,8 @@
-export const sliders: Slider[] =[
+import { Category } from './models/Category'
+import { Slider } from './models/Slider'
+import { PopularProduct } from './models/PopularProduct'
+
+const sliders: Slider[] =[
     {
         id: 1,
         img: 'https://i.pinimg.com/564x/a6/51/02/a651026986996bb1b607d4487c5a5336.jpg',
@@ -32,7 +36,7 @@ export const sliders: Slider[] =[
         color: '37fe47',
     }
 ];
-export const categories: Category[] =[
+const categories: Category[] =[
     {
         id: 1,
         img: "https://i.pinimg.com/564x/f2/33/8f/f2338fbb7a7236dc371d657a9b0b2c45.jpg",
@@ -52,7 +56,7 @@ export const categories: Category[] =[
         color: 'ff00ee'
     },
 ];
-export const popularProducts: PopularProduct[] =[
+const popularProducts: PopularProduct[] =[
     {
         id: 1,
         image: "https://img.ltwebstatic.com/images3_pi/2021/07/28/1627438491a3fac3cf972dde5aa73fd9413a81c0d4_thumbnail_600x.webp",
@@ -78,3 +82,5 @@ export const popularProducts: PopularProduct[] =[
         image: "https://img.ltwebstatic.com/images3_pi/2021/07/28/1627438491a3fac3cf972dde5aa73fd9413a81c0d4_thumbnail_600x.webp",
     },
 ];
+
+export { popularProducts, categories, sliders}
