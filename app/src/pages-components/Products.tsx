@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
-import {Product} from './Product'
+import { Product } from './index'
 
 import {popularProducts} from '../Data'
 
@@ -13,3 +13,5 @@ const Products = () => {
     </Container>
   )
 }
+
+export default Products

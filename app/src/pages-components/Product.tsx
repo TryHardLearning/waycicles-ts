@@ -2,7 +2,7 @@ import React from 'react'
 import { FavoriteBorderOutlined, SearchOutlined, ShoppingCartOutlined } from '@mui/icons-material'
 import './css/Product.css'
 
-export const Product = ({item} : {item : any}) => {
+const Product = ({item} : {item : any}) => {
   return (
     <div className='product d-flex justify-content-center align-items-center position-relative'>
         <img src={item.img} className=' img h-75'/>
@@ -20,3 +20,5 @@ export const Product = ({item} : {item : any}) => {
     </div>
   )
 }
+
+export default Product
