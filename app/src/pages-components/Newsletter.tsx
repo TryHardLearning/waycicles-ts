@@ -3,7 +3,7 @@ import { Send } from '@mui/icons-material'
 import { Container } from 'react-bootstrap'
 import './css/Newsletter.css'
 
-export const Newsletter = () => {
+const Newsletter = () => {
   return (
     <Container fluid className='newsletter d-flex justify-content-center align-items-center flex-column'>
         <h1 className='title fw-500 mb-2'>Newsletter</h1>
@@ -17,3 +17,5 @@ export const Newsletter = () => {
     </Container>
   )
 }
+
+export default Newsletter

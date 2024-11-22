@@ -1,9 +1,43 @@
 import React from 'react'
-import {Search, ShoppingCartOutlined , FavoriteBorderOutlined, BorderAll} from '@mui/icons-material'
-import {Badge} from '@mui/icons-material'
+import { Search, ShoppingCartOutlined , FavoriteBorderOutlined, BorderAll } from '@mui/icons-material'
+import { Badge } from '@mui/icons-material'
 import { Container } from 'react-bootstrap'
 import './css/Navebar.css'
-import {Announcement} from './Announcement'
+import { Announcement } from './index'
+import styled from '@emotion/styled'
+
+const NavbarContainer = styled.nav`
+    box-shadow: 0 5px 5px rgba(57, 63, 72, 0.3);
+    background-color: #fff;
+    z-index: 1000000;
+    position: fixed;
+    top: 30px;
+`
+
+const HeartBit = styled.span`
+    font-size: 14px;
+    transition: all 1s ease !important;
+`
+
+const SearchContainer = styled.div`
+    border: 1px solid lightgray;
+    width: 45%;
+`
+
+const Input = styled.input`
+    border-radius: 2px;
+    padding: 4px;
+    border: none;
+    max-width: 90%;
+`
+
+const Logo = styled. {
+    font-size: 32px;
+}
+
+.MenuItem{
+    font-size: 14px;
+}
 
 const Navebar = () => {
   return (
@@ -39,3 +73,5 @@ const Navebar = () => {
     
   )
 }
+
+export default Navebar
