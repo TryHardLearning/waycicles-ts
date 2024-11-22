@@ -1,10 +1,10 @@
 import React from 'react'
 import {categories} from '../Data'
-import {CategoryItem} from './Categories-Item'
+import { CategoryItem } from './index'
 import { Container, Row } from 'react-bootstrap'
 
 
-export const Categories = () => {
+const Categories = () => {
   return (
     <Container fluid className='Categories d-flex justify-content-space-between ps-4 pe-4'> 
       {categories.map(({item}: any)=>(
@@ -13,3 +13,5 @@ export const Categories = () => {
     </Container>
   )
 }
+
+export default Categories
