@@ -16,8 +16,10 @@ const Button =styled.button`
 `
 
 
-export const ButtonDefault = ({text,color}: {text: string,color: string}) => {
+const ButtonDefault = ({text,color}: {text: string,color: string}) => {
   return (
     <Button color={color}>{text}</Button>
   )
 }
+
+export default ButtonDefault

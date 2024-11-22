@@ -14,8 +14,10 @@ const Button = styled.button`
     background-color: #ff00ee;
   }
 `
-export const ButtonStyled = ({text}: { text: string }) => {
+const ButtonCool = ({text}: { text: string }) => {
   return (
     <Button>{text}</Button>
   )
 }
+
+export default ButtonCool

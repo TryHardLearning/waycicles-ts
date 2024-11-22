@@ -17,8 +17,10 @@ const Button = styled.button`
     background-color: #ff00ee;
   }
 `
-export const ButtonLarge = ({text}: {text: string}) => {
+const ButtonLarge = ({text}: {text: string}) => {
   return (
     <Button>{text}</Button>
   )
 }
+
+export default ButtonLarge
